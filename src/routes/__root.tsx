@@ -75,10 +75,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Meuble Ton sur Ton — Ameublement & Décoration" },
       { name: "description", content: "Magasin d'ameublement et de décoration à La Soukra. Sublimez votre intérieur." },
       { name: "author", content: "Meuble Ton sur Ton" },
-      { property: "og:title", content: "Meuble Ton sur Ton" },
-      { property: "og:description", content: "Sublimez votre intérieur avec nos collections raffinées." },
+      { property: "og:title", content: "Meuble Ton sur Ton — Ameublement & Décoration" },
+      { property: "og:description", content: "Magasin d'ameublement et de décoration à La Soukra. Sublimez votre intérieur." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Meuble Ton sur Ton — Ameublement & Décoration" },
+      { name: "twitter:description", content: "Magasin d'ameublement et de décoration à La Soukra. Sublimez votre intérieur." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/99cea5a3-71cf-4801-81f1-e54dbd4a97b9/id-preview-c7767938--da5eaea5-3b56-4f98-99da-8bedd46850dd.lovable.app-1778673554435.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/99cea5a3-71cf-4801-81f1-e54dbd4a97b9/id-preview-c7767938--da5eaea5-3b56-4f98-99da-8bedd46850dd.lovable.app-1778673554435.png" },
     ],
     links: [
       {
