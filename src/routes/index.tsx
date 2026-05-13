@@ -3,7 +3,6 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, Truck, HandHeart, Star } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import heroImg from "@/assets/hero-living.jpg";
-import heroVideo from "@/assets/hero-loop.mp4.asset.json";
 import livingImg from "@/assets/cat-living.jpg";
 import diningImg from "@/assets/cat-dining.jpg";
 import bedroomImg from "@/assets/cat-bedroom.jpg";
@@ -76,7 +75,7 @@ function Index() {
           <div className="relative" style={{ animation: "fade-up 1s ease-out 0.2s both" }}>
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-elegant">
               <video
-                src={heroVideo.url}
+                src="/ton-sur-ton.mp4"
                 poster={heroImg}
                 autoPlay
                 muted
