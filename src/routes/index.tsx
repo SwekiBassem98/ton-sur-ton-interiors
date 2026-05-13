@@ -3,6 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, Truck, HandHeart, Star } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import heroImg from "@/assets/hero-living.jpg";
+import heroVideo from "@/assets/hero-loop.mp4.asset.json";
 import livingImg from "@/assets/cat-living.jpg";
 import diningImg from "@/assets/cat-dining.jpg";
 import bedroomImg from "@/assets/cat-bedroom.jpg";
@@ -74,12 +75,18 @@ function Index() {
           </div>
           <div className="relative" style={{ animation: "fade-up 1s ease-out 0.2s both" }}>
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-elegant">
-              <img
-                src={heroImg}
-                alt="Salon moderne aménagé par Meuble Ton sur Ton"
+              <video
+                src={heroVideo.url}
+                poster={heroImg}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                aria-label="Showroom Meuble Ton sur Ton"
                 className="h-full w-full object-cover"
-                style={{ animation: "slow-zoom 12s ease-in-out infinite alternate" }}
               />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-foreground/15 via-transparent to-transparent" />
             </div>
             <div className="absolute -bottom-6 -left-6 hidden rounded-xl bg-card px-5 py-4 shadow-elegant md:block">
               <div className="flex items-center gap-3">
