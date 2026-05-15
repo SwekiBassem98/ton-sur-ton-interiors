@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, MapPin, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import { Logo } from "./Logo";
 
 const nav = [
   { to: "/", label: "Accueil" },
@@ -39,13 +40,8 @@ export function Header() {
         }`}
       >
         <div className="container mx-auto flex items-center justify-between px-4 py-4">
-          <Link to="/" className="group flex items-baseline gap-1">
-            <span className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-              Meuble
-            </span>
-            <span className="font-display text-2xl italic text-primary md:text-3xl">
-              Ton sur Ton
-            </span>
+          <Link to="/" aria-label="Ton sur Ton — Accueil" className="group block">
+            <img src="/logo1.png" alt="Ton sur Ton" className="h-12 w-auto md:h-12" />
           </Link>
           <nav className="hidden items-center gap-8 md:flex">
             {nav.map((n) => (
