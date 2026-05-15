@@ -132,6 +132,7 @@ function Index() {
           {categories.map((c, i) => (
             <Link
               to="/collections"
+              search={{ category: c.title }}
               key={c.title}
               className="group relative aspect-[4/5] overflow-hidden rounded-2xl shadow-soft"
               style={{ animation: `fade-up 0.6s ease-out ${i * 0.1}s both` }}
